@@ -21,7 +21,7 @@
       scrollTo: -1,
       scrollHistory: true,
       hashGenerator: function (text, element) {
-        return element.prop('id');
+        return element.prop('id') + '-anchor';
       }
     }).data('toc-tocify');
 
