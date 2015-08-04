@@ -721,13 +721,24 @@ html, body {
 }
 
 .content .sidebar-anchor-h1 {
-  padding-top: 65px; 
-  margin-top: -65px;
-  visibility: hidden;
+  height: 1px;
+  position: relative;
+  top: -63px;
+}
+
+.content div:first-child + .sidebar-anchor-h1 {
+  top: -125px;
 }
 
 .content .sidebar-anchor-h2 {
-  padding-top: 108px; 
-  margin-top: -108px;
-  visibility: hidden;
+  height: 1px;
+  position: relative;
+  top: -106px;
+}
+
+.content h1 {
+  &:first-of-type {
+    border-top: none;
+    margin-top: 0;
+  }
 }
